@@ -20,8 +20,8 @@ public class MyController {
   @ResponseBody
   @GetMapping("/insert")
   public int insert(@RequestParam String name, @RequestParam Integer age) {
-    int    insertedRecords = myService.insert(name, age);
-    return insertedRecords;
+    int    id = myService.insert(name, age);
+    return id;
   }
 
 }
